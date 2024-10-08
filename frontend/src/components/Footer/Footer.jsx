@@ -15,8 +15,8 @@ const Footer = () => {
             Empowering a sustainable future with innovative solar panel installation solutions. We provide high-quality, cost-effective solar energy systems tailored to meet your energy needs. Join us in harnessing the power of the sun to build a greener tomorrow.
           </p>
           <div className='social-media-icons'>
-            <img src={assets.facebook_icon} alt='Facebook Icon' />
-            <img src={assets.twitter_icon} alt='Twitter Icon' />
+            <a className='social-link' href='https://m.facebook.com/profile.php?id=61566502061796'><img src={assets.facebook_icon} alt='Facebook Icon' /></a>
+            <a className='social-link' ><img src={assets.twitter_icon} alt='Twitter Icon' /></a>
           </div>
         </div>
 
