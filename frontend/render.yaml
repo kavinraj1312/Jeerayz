@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: your-app-name
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: serve -s build
+    staticPublishPath: build
+    autoDeploy: true
+    routes:
+      - src: /.*
+        dest: index.html

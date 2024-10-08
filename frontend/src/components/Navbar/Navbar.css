@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+    padding: 30px 20px; /* Increased padding for height and added horizontal padding */
+    display: flex;
+    position: sticky; /* Keeps the navbar sticky */
+    top: 0; /* Sticks the navbar to the top when scrolling */
+    width: 100%; /* Full width to align with the page */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white; /* Ensures background is solid to prevent transparency */
+    z-index: 1000; /* Keeps the navbar above other content */
+}
+
+.navbar .logo {
+    display: flex; /* Allows the logo and text to be aligned properly */
+    align-items: center; /* Vertically centers the logo and text */
+    color: tomato;
+    font-size: 28px; /* Increased font size for better visibility */
+    font-weight: 700;
+}
+
+.navbar .navbar-logo {
+    height: 50px; /* Height of the logo */
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: middle; /* Align the logo vertically */
+}
+
+.navbar-menu {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    gap: 30px; /* Increased gap for better spacing */
+    color: #49557e;
+    font-size: 20px; /* Increased font size for better visibility */
+}
+
+.navbar .active {
+    padding-bottom: 4px; /* Slightly increased padding for the active link */
+    border-bottom: 3px solid #49557e; /* Slightly thicker border for better visibility */
+}
+
+.navbar .navbar-right {
+    cursor: pointer;
+}
+
+/* Additional styles to enhance navbar appearance */
+.navbar-menu li:hover {
+    color: tomato; /* Change color on hover for better interactivity */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Styles for mobile responsiveness */
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    font-size: 28px; /* Size of the hamburger icon */
+    cursor: pointer; /* Cursor change for interactivity */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .navbar-toggle {
+        display: flex; /* Show the toggle button on mobile */
+        align-items: center; /* Center vertically */
+        margin-bottom: 10px; /* Space between toggle and menu */
+    }
+
+    .navbar-menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 15px; /* Reduce gap for better spacing */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show the menu when toggled */
+    }
+}

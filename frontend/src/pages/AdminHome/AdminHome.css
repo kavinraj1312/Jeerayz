@@ -1,0 +1,61 @@
+.upload {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center; /* Center items horizontally */
+}
+
+.upload .admin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to fill the container */
+    gap: 15px; /* Adds space between the form elements */
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 500px; /* Limits maximum width for larger screens */
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #fff; /* White background for visibility */
+}
+
+.admin-form label {
+    font-weight: bold; /* Make label text bold for emphasis */
+    margin-bottom: 5px; /* Space below label */
+    color: #333; /* Darker text for better readability */
+}
+
+.admin-form input {
+    width: 100%;
+    padding: 10px; /* Increased padding for better touch targets */
+    margin-top: 5px; /* Space between label and input */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Increased font size for readability */
+}
+
+/* Button Styles */
+.upload button {
+    width: 100%;
+    padding: 10px; /* Increased padding for comfort */
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    font-size: 16px; /* Ensure button text is readable */
+    border: none; /* Remove default button border */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    cursor: pointer;
+}
+
+.upload button:hover {
+    background-color: #e74c3c; /* Darker shade on hover for better feedback */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .upload .admin-form {
+        width: 90%; /* Use a smaller width on smaller screens */
+        margin-top: 50px; /* Reduce top margin on mobile */
+    }
+}

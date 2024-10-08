@@ -1,0 +1,179 @@
+/* Footer Styles */
+.footer {
+    width: 100vw; /* Full width */
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keeps overall footer centered */
+    padding: 40px 8vw;
+    padding-top: 80px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px; /* Restricts content width for readability */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Grid layout for three sections */
+    gap: 80px;
+    margin: 0 auto; /* Center content */
+    padding: 0 8vw;
+    box-sizing: border-box;
+    align-items: start; /* Aligns content to the top within each column */
+}
+
+/* Footer Left, Center, and Right Sections */
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    list-style: none;
+    gap: 20px;
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+.footer-left h2.logo {
+    color: tomato;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #d9d9d9;
+}
+
+/* Social Media Icons Styling */
+.social-media-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Center and Right Styling */
+.footer-center h2, .footer-right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-center ul, .footer-right ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left; /* Ensures list items are left-aligned */
+}
+
+.footer-center ul li, .footer-right ul li {
+    margin-bottom: 10px;
+    color: #d9d9d9;
+}
+
+.footer-center ul li:hover, .footer-right ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Footer Copyright Styling */
+.footer hr {
+    width: 100%;
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #555;
+}
+
+.footer-copyright {
+    color: #d9d9d9;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    position: fixed; /* Use fixed positioning to position icons relative to the viewport */
+    bottom: 110px; /* Adjust this value to position below the WhatsApp button */
+    right: 40px; /* Align with WhatsApp button */
+}
+
+.contact-icon {
+    font-size: 1rem; /* Adjust size of the contact icon */
+    color: #fff; /* Change color to match your footer theme */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    margin-bottom: 10px; /* Add space between icons */
+}
+
+.contact-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.phone-icon{
+    display: flex; /* Align items in a row */
+    padding: 12px;
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon vertically */
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin-bottom: 10px; /* Space between icons */
+    transition: transform 0.3s ease; 
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px #888;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+/* Styling for the WhatsApp Icon */
+.whatsapp-icon {
+    color: #fff; /* White icon */
+    font-size: 36px; /* Icon size */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns for smaller screens */
+        gap: 40px;
+    }
+    .footer {
+        padding: 20px 5vw;
+    }
+    .footer-center h2, .footer-right h2 {
+        font-size: 1em;
+    }
+}

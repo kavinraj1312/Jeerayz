@@ -1,0 +1,75 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.signup .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.signup label {
+    position: relative;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets and Medium Devices */
+@media (max-width: 768px) {
+    .signup .signup-form {
+        width: 80%; /* Make the form width flexible */
+        padding: 20px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .signup .signup-form {
+        width: 90%; /* Further reduce width on small screens */
+        padding: 15px;
+    }
+
+    .signup button {
+        padding: 10px; /* Increase button padding slightly for touch devices */
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 320px) {
+    .signup .signup-form {
+        width: 95%; /* Maximize width for very small screens */
+        padding: 10px;
+    }
+
+    .signup button {
+        padding: 12px; /* Ensure button remains touch-friendly */
+    }
+}

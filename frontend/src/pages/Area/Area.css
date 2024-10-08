@@ -1,0 +1,132 @@
+.product-container {
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #f9f9f9, #e3f2fd);
+}
+
+/* Header Section */
+.product-header {
+  text-align: center;
+  font-size: 36px;
+  color: #1e88e5;
+  margin-bottom: 30px;
+}
+
+/* Product Details Section */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Spacing between product details */
+}
+
+/* Product Detail Card */
+.product-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Add hover effect */
+}
+
+.product-detail:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Product Image */
+.product-detail-image {
+  width: 40%; /* Set width for larger screens */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Text Container */
+.product-detail-text {
+  flex: 1; /* Allow text container to fill available space */
+}
+
+/* Title Style */
+.product-detail-title {
+  font-size: 28px;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+/* Description Style */
+.product-detail-description {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Design */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .product-header {
+      font-size: 28px; /* Smaller header font size */
+  }
+
+  .product-detail {
+      gap: 15px; /* Reduced gap for smaller screens */
+  }
+
+  .product-detail-image {
+      width: 50%; /* Adjust image width */
+  }
+
+  .product-detail-title {
+      font-size: 24px; /* Smaller title font size */
+  }
+
+  .product-detail-description {
+      font-size: 16px; /* Smaller description font size */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .product-header {
+      font-size: 24px; /* Further reduce header size */
+  }
+
+  .product-detail {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align text to start */
+  }
+
+  .product-detail-image {
+      width: 100%; /* Full width for mobile */
+      margin-bottom: 15px; /* Space below image */
+  }
+
+  .product-detail-title {
+      font-size: 20px; /* Further reduce title size */
+  }
+
+  .product-detail-description {
+      font-size: 14px; /* Further reduce description size */
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .product-header {
+      font-size: 20px; /* Further reduce header size */
+  }
+
+  .product-detail {
+      padding: 15px; /* Reduce padding */
+  }
+
+  .product-detail-title {
+      font-size: 18px; /* Further reduce title size */
+  }
+
+  .product-detail-description {
+      font-size: 12px; /* Further reduce description size */
+  }
+}

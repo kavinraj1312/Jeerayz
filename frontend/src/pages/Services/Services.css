@@ -1,0 +1,147 @@
+/* General styling remains the same for larger screens */
+
+.services-container {
+  width: 100%;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.services-header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.services-types {
+  margin-bottom: 40px;
+}
+
+/* Adjusting benefits header */
+.benefits-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff9800;
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between; /* Adjusted for better alignment */
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 30px; /* Adds spacing between items */
+}
+
+.benefit-item {
+  flex: 1 1 calc(30% - 20px); /* Adjusted for spacing between items */
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers the text */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-title {
+  font-size: 1.5rem;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.benefit-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .services-header {
+      font-size: 2rem; /* Slightly smaller header font size */
+  }
+
+  .services-description {
+      font-size: 1.1rem; /* Adjust description text for readability */
+  }
+
+  .benefit-item {
+      flex: 1 1 calc(45% - 20px); /* Adjust layout for medium screens */
+  }
+}
+
+/* Mobile devices (landscape and portrait) */
+@media (max-width: 768px) {
+  .services-header {
+      font-size: 1.8rem; /* Smaller header */
+  }
+
+  .services-description {
+      font-size: 1rem; /* Adjust description size */
+      margin-bottom: 30px; /* Reduce spacing */
+  }
+
+  .benefits-header {
+      font-size: 1.5rem; /* Smaller benefits header */
+  }
+
+  .benefit-item {
+      flex: 1 1 calc(100% - 20px); /* Stack items vertically for mobile */
+      padding: 15px; /* Reduce padding */
+  }
+
+  .benefit-title {
+      font-size: 1.2rem; /* Smaller title */
+  }
+
+  .benefit-description {
+      font-size: 0.9rem; /* Smaller description text */
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .services-header {
+      font-size: 1.5rem; /* Further reduce header size */
+  }
+
+  .services-description {
+      font-size: 0.9rem; /* Reduce font size for small screens */
+      margin-bottom: 20px;
+  }
+
+  .benefits-header {
+      font-size: 1.3rem; /* Smaller benefits header */
+  }
+
+  .benefit-item {
+      padding: 10px;
+      margin: 5px;
+  }
+
+  .benefit-title {
+      font-size: 1rem; /* Reduce title font */
+  }
+
+  .benefit-description {
+      font-size: 0.8rem; /* Small font for small screens */
+  }
+}
