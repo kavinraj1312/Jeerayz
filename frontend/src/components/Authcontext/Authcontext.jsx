@@ -4,7 +4,7 @@ export const Authcontext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(null);
-    const url="http://localhost:3000"
+    const url="https://jeerayz-backend.onrender.com"
 
     useEffect(() => {
         // Retrieve token from localStorage or wherever it's stored
