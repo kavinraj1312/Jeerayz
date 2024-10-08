@@ -8,7 +8,7 @@ import approute from './router/Route.js';
 const app = express();
 app.use(express.json()); // Middleware to parse JSON
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://jeerayz-frontend.onrender.com',
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
 allowedHeaders: ['Content-Type', 'Authorization']
 
