@@ -40,6 +40,7 @@ const Installation = () => {
                         className='install-image'
                         src={image.data}
                         alt={image.place}
+                        loading="lazy"
                     />
                 </div>
                 <div className="image-info">
